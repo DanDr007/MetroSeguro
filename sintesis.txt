@@ -1,0 +1,90 @@
+Usuarios: {
+	Nombre, required //
+	Correo, required, unique //
+	Contraseña, required //
+	Rol, required //
+	Estado,
+	Alerta
+}
+
+
+Rols: {
+	Usuario / Admin
+}
+
+
+Altercados: {
+	Línea, required
+	Estación, required
+Altercado, required
+Fecha
+Horario
+Descripcion
+Imagen
+Estado
+Calificacion
+Usuario
+}
+
+
+
+
+
+
+Rest API nodejs
+
+
+
+Usuario  controller {
+	post /usuario
+	post /usuarioAdmin ( requiere admin aut )
+	get /usuarios ( requiere admin aut )
+	delete /usuario/:id ( requiere admin aut )
+}
+
+
+Aut controller {
+	post /auth
+}
+
+
+Altercado controller {
+	Post /altercado (requiere user aut )
+	Put /alterado/:id ( requiere useraut)
+	Put /utilidad /:id ( requiere user aut )
+	Delete /altercado/:id ( requiere user aut o admin aut )
+	Get /altercados/:linea/:altercado ( requiere user aut o admin aut )
+	Get altercado/:id ( requiere user aut o admin aut )
+}
+
+
+
+
+https://www.freecodecamp.org/espanol/news/arreglos-de-objetos-en-javascript-actualizar/
+
+
+chema
+vasco
+daniel
+araam
+
+
+Create
+Reading
+Update
+Delete
+
+
+
+
+estaciones = [
+	{ nombre: "asdasdd", altercados: 5 }
+];
+
+
+max()
+min()
+
+
+Horario ( redondeamos )
+Altercado mas frecuente
